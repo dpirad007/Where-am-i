@@ -1,6 +1,5 @@
-### npm install
+### Run client locally
 
 `
-npm install
-npm run dev
+npm install && npm run dev
 `
