@@ -1,30 +1,30 @@
 <script>
-	export let name;
+	import { Button, Navbar, Table } from "spaper";
+
+	const data = [
+		{ rollno: 1, name: "Ved Patil", country: "India" },
+		{ rollno: 2, name: "Gaurang Pawar", country: "India" },
+		{ rollno: 3, name: "Atharva Pathade", country: "India" },
+		{ rollno: 4, name: "Dion Pinto", country: "India" },
+	];
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<Navbar>
+		<h3 slot="brand">
+			<a href="#">Where-am-i ?</a>
+		</h3>
+		<ul class="inline">
+			<li><a href="#">Class</a></li>
+			<li><a href="#">Logs</a></li>
+			<li>
+				<Button>Github</Button>
+			</li>
+		</ul>
+	</Navbar>
+
+	<Table {data} />
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
