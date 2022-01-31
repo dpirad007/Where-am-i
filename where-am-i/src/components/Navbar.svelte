@@ -1,8 +1,5 @@
 <script>
-    import Table from "./Table.svelte";
     import { Button, Navbar } from "spaper";
-
-    export let data = [];
 </script>
 
 <main>
@@ -18,5 +15,4 @@
             </li>
         </ul>
     </Navbar>
-    <Table {data} />
 </main>

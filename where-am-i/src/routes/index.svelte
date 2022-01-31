@@ -1,4 +1,5 @@
 <script>
+	import Table from "../components/Table.svelte";
 	import Navbar from "../components/Navbar.svelte";
 
 	const data = [
@@ -10,7 +11,8 @@
 </script>
 
 <main>
-	<Navbar {data} />
+	<Navbar />
+	<Table {data} />
 </main>
 
 <style>
