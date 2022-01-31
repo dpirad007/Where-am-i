@@ -1,5 +1,5 @@
 <script>
-	import { Button, Navbar, Table } from "spaper";
+	import Navbar from "../components/Navbar.svelte";
 
 	const data = [
 		{ rollno: 1, name: "Ved Patil", country: "India" },
@@ -10,21 +10,17 @@
 </script>
 
 <main>
-	<Navbar>
-		<h3 slot="brand">
-			<a href="#">Where-am-i ?</a>
-		</h3>
-		<ul class="inline">
-			<li><a href="#">Class</a></li>
-			<li><a href="#">Logs</a></li>
-			<li>
-				<Button>Github</Button>
-			</li>
-		</ul>
-	</Navbar>
-
-	<Table {data} />
+	<Navbar {data} />
 </main>
 
 <style>
+	main {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		color: #333;
+		margin: 0;
+		padding: 12px;
+		box-sizing: border-box;
+	}
 </style>
