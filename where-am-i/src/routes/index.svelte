@@ -16,3 +16,6 @@
 	<Navbar />
 	<Table {data} />
 </main>
+
+<style>
+</style>
