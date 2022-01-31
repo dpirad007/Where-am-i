@@ -2,6 +2,8 @@
 	import Table from "../components/Table.svelte";
 	import Navbar from "../components/Navbar.svelte";
 
+	import "../global.css";
+
 	const data = [
 		{ rollno: 1, name: "Ved Patil", country: "India" },
 		{ rollno: 2, name: "Gaurang Pawar", country: "India" },
@@ -14,15 +16,3 @@
 	<Navbar />
 	<Table {data} />
 </main>
-
-<style>
-	main {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		color: #333;
-		margin: 0;
-		padding: 12px;
-		box-sizing: border-box;
-	}
-</style>
