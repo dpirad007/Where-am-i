@@ -9,6 +9,7 @@
         </h3>
         <ul class="inline">
             <li><a href="/create">Create</a></li>
+            <li><a href="/profile">Profile</a></li>
             <li><a href="/">Logs</a></li>
             <li>
                 <Button>Github</Button>
