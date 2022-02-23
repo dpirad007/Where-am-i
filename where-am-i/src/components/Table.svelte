@@ -4,5 +4,5 @@
 </script>
 
 <main>
-    <Table {data} />
+    <Table {data} hoverable />
 </main>
