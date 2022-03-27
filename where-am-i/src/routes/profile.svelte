@@ -15,6 +15,7 @@
     ];
 
     let rollNo = 501851;
+    let name = "Ved Patil";
     let father = "Arpit Bhat";
     let mother = "Archit Bhonsle";
     let contact = "98989839389";
@@ -23,7 +24,10 @@
 
 <main>
     <Breadcrumb {items} border="True" />
-    <h4>Profile <Badge type="success">Roll {rollNo}</Badge></h4>
+    <h4>
+        Profile <Badge type="secondary">{name}</Badge>
+        <Badge type="success">Roll {rollNo}</Badge>
+    </h4>
     <div class="profile-content">
         <div class="profile-card-center">
             <Card
@@ -45,7 +49,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px;
+        padding: 15px;
     }
     .profile-card-center {
         width: 500px;
